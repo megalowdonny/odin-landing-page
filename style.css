@@ -1,0 +1,58 @@
+* {
+  font-family: "Oswald", "Tahoma", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.main {
+  /*VERY IMPORTANT APPARENTLY*/
+  min-height: 100vh;
+  /*VERY IMPORTANT APPARENTLY*/
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
+.second {
+  display: flex;
+  border: 1px solid green;
+}
+
+.third {
+  display: flex;
+  border: 1px solid yellow;
+}
+
+.fourth {
+  display: flex;
+  border: 1px solid purple;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  border: 1px solid pink;
+}
