@@ -1,5 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
-  font-family: "Oswald", "Tahoma", sans-serif;
+  font-family: "Poppins", "Tahoma", sans-serif;
+  box-sizing: inherit;
 }
 
 ul {
@@ -16,7 +21,7 @@ a {
   /*VERY IMPORTANT APPARENTLY*/
   min-height: 100vh;
   /*VERY IMPORTANT APPARENTLY*/
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -28,40 +33,50 @@ a {
 }
 
 .header {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 20px 120px 20px 120px;
   background-color: #1f2937;
   flex: 4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .first {
+  padding-left: 120px;
+  padding-right: 120px;
   background-color: #1f2937;
   flex: 23;
   display: flex;
-  justify-content: space-between;
-  border: 1px solid blue;
+  justify-content: center;
+  gap: 50px;
 }
 
 .second {
   flex: 23;
   display: flex;
-  border: 1px solid green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
 }
 
 .third {
+  background-color: #e5e7eb;
   flex: 23;
   display: flex;
-  border: 1px solid yellow;
+  flex-direction: column;
+  padding: 5% 20% 5% 20%;
 }
 
 .fourth {
+  background-color: #3882f6;
+  margin: 80px 220px 80px 220px;
   flex: 23;
   display: flex;
-  border: 1px solid purple;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .footer {
@@ -70,6 +85,10 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid pink;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .logo {
@@ -87,23 +106,89 @@ a {
 
 .intro {
   color: #e5e7eb;
-  font-size: 12px;
-  flex: 1;
+  font-size: 14px;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 .intro h1 {
   color: #f9faf8;
+  font-size: 48px;
+  font-weight: extra-bold;
+  margin: 0;
+}
+
+.intro .button {
+  color: #f9faf8;
+  background-color: #3882f6;
+  border-radius: 10px;
+  border: none;
+  padding: 2px 20px 2px 20px;
 }
 
 .intro-image {
   flex: 1;
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
+}
+
+.image {
+  width: 80%;
+  padding: 40px;
 }
 
 .gallery {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-desc {
+  text-align: center;
+  font-size: 12px;
+  width: 80%;
+}
+
+.quote {
+  font-size: 32px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937
+}
+
+.reference {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: bold; color: #1f2937;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  color: #f9faf8;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.signup h2 {
+  font-size: 24px;
+}
+
+.signup-button button {
+  color: #f9faf8;
+  background-color: #3882f6;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+  padding: 5px 25px 5px 25px;
 }
